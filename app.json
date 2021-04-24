@@ -1,0 +1,15 @@
+{
+  "name": "citizen",
+  "displayName": "citizen",
+  "expo": {
+    "name": "citizen",
+    "slug": "citizen",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android":  {
+      "permissions": []
+    }
+  }
+}
