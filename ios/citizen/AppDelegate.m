@@ -18,6 +18,9 @@
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
 
+#import <Firebase.h>
+#import <GoogleMaps/GoogleMaps.h>
+
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
   SKDescriptorMapper *layoutDescriptorMapper = [[SKDescriptorMapper alloc] initWithDefaults];
@@ -40,6 +43,13 @@ static void InitializeFlipper(UIApplication *application) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+[GMSServices provideAPIKey:@"AIzaSyBSOFItR7-aCYhFSPQ5rcl8gfWRGcbN5io"];
+
+if ([FIRApp defaultApp] == nil) {
+  [FIRApp configure];
+}
+
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
 #endif
