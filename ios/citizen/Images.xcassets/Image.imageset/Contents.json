@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "logo-emdur.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "log-emdur@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "logo-emdur@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
